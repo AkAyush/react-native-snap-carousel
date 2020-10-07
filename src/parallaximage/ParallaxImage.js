@@ -6,17 +6,6 @@ import styles from './ParallaxImage.style';
 
 export default class ParallaxImage extends Component {
 
-   
-
-    static defaultProps = {
-        containerStyle: {},
-        fadeDuration: 500,
-        parallaxFactor: 0.3,
-        showSpinner: true,
-        spinnerColor: 'rgba(0, 0, 0, 0.4)',
-        AnimatedImageComponent: Animated.Image
-    }
-
     constructor (props) {
         super(props);
         this.state = {
@@ -197,3 +186,12 @@ export default class ParallaxImage extends Component {
         );
     }
 }
+
+ ParallaxImage.defaultProps = {
+        containerStyle: {},
+        fadeDuration: 500,
+        parallaxFactor: 0.3,
+        showSpinner: true,
+        spinnerColor: 'rgba(0, 0, 0, 0.4)',
+        AnimatedImageComponent: Animated.Image
+    }
