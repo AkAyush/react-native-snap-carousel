@@ -8,19 +8,6 @@ const IS_RTL = I18nManager.isRTL;
 
 export default class Pagination extends PureComponent {
 
-   
-
-    static defaultProps = {
-        inactiveDotOpacity: 0.5,
-        inactiveDotScale: 0.5,
-        tappableDots: false,
-        vertical: false,
-        animatedDuration: 250,
-        animatedFriction: 4,
-        animatedTension: 50,
-        delayPressInDot: 0,
-    }
-
     constructor (props) {
         super(props);
 
@@ -141,3 +128,13 @@ export default class Pagination extends PureComponent {
         );
     }
 }
+Pagination.defaultProps = {
+        inactiveDotOpacity: 0.5,
+        inactiveDotScale: 0.5,
+        tappableDots: false,
+        vertical: false,
+        animatedDuration: 250,
+        animatedFriction: 4,
+        animatedTension: 50,
+        delayPressInDot: 0,
+    }
