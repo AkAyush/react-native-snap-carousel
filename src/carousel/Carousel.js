@@ -26,40 +26,6 @@ const IS_RTL = I18nManager.isRTL;
 
 export default class Carousel extends Component {
 
-  
-
-    static defaultProps = {
-        activeAnimationType: 'timing',
-        activeAnimationOptions: null,
-        activeSlideAlignment: 'center',
-        activeSlideOffset: 20,
-        apparitionDelay: 0,
-        autoplay: false,
-        autoplayDelay: 1000,
-        autoplayInterval: 3000,
-        callbackOffsetMargin: 5,
-        containerCustomStyle: {},
-        contentContainerCustomStyle: {},
-        enableMomentum: false,
-        enableSnap: true,
-        firstItem: 0,
-        hasParallaxImages: false,
-        inactiveSlideOpacity: 0.7,
-        inactiveSlideScale: 0.9,
-        inactiveSlideShift: 0,
-        layout: 'default',
-        lockScrollTimeoutDuration: 1000,
-        lockScrollWhileSnapping: false,
-        loop: false,
-        loopClonesPerSide: 3,
-        scrollEnabled: true,
-        slideStyle: {},
-        shouldOptimizeUpdates: true,
-        swipeThreshold: 20,
-        useScrollView: !AnimatedFlatList,
-        vertical: false
-    }
-
     constructor (props) {
         super(props);
 
@@ -1327,3 +1293,35 @@ export default class Carousel extends Component {
         );
     }
 }
+
+Carousel.defaultProps = {
+        activeAnimationType: 'timing',
+        activeAnimationOptions: null,
+        activeSlideAlignment: 'center',
+        activeSlideOffset: 20,
+        apparitionDelay: 0,
+        autoplay: false,
+        autoplayDelay: 1000,
+        autoplayInterval: 3000,
+        callbackOffsetMargin: 5,
+        containerCustomStyle: {},
+        contentContainerCustomStyle: {},
+        enableMomentum: false,
+        enableSnap: true,
+        firstItem: 0,
+        hasParallaxImages: false,
+        inactiveSlideOpacity: 0.7,
+        inactiveSlideScale: 0.9,
+        inactiveSlideShift: 0,
+        layout: 'default',
+        lockScrollTimeoutDuration: 1000,
+        lockScrollWhileSnapping: false,
+        loop: false,
+        loopClonesPerSide: 3,
+        scrollEnabled: true,
+        slideStyle: {},
+        shouldOptimizeUpdates: true,
+        swipeThreshold: 20,
+        useScrollView: !AnimatedFlatList,
+        vertical: false
+    }
